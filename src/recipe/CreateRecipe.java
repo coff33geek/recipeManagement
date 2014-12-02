@@ -1,4 +1,7 @@
 package recipe;
+
+import java.util.Arrays;
+
 /**
  * Class to Create new Recipes, based on the correct format for the txts. 
  * @author cstra_000
@@ -39,10 +42,10 @@ public class CreateRecipe{
 	}
 	
 	public String[] getIngredients() {
-		return ingredients;
+		return Arrays.copyOf(ingredients, ingredients.length);
 	}
 	public void setIngredients(String[] ingredients) {
-		this.ingredients = ingredients;
+		this.ingredients = Arrays.copyOf(ingredients, ingredients.length);
 	}
 	
 	public String getPicturePath() {
@@ -52,6 +55,5 @@ public class CreateRecipe{
 	public void setPicturePath(String picturePath) {
 		this.picturePath = picturePath;
 	}
-	
 	
 }

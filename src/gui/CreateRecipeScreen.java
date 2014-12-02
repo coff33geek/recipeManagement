@@ -35,7 +35,6 @@ public class CreateRecipeScreen extends JFrame {
 
         add(toolbar, BorderLayout.NORTH);
 
-        J
 
         JLabel statusbar = new JLabel(" Statusbar");
         statusbar.setPreferredSize(new Dimension(-1, 22));
